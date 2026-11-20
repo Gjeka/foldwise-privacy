@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foldwise support</title>
+<style>
+  :root { --paper: #f2f3ef; --surface: #ffffff; --ink: #17191c; --muted: #5a5f66; --line: #d2d5cd; --link: #2f5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #111316; --surface: #1b1e22; --ink: #f1f2ee; --muted: #a3a9b1; --line: #2e333a; --link: #8db3dc; }
+  }
+  html { background: var(--paper); color: var(--ink); }
+  body { margin: 0; font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  em { color: var(--muted); font-style: normal; }
+  ul, ol { padding-left: 1.4em; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+<h1>Foldwise support</h1>
+<p>Foldwise counts how often you unfold your foldable phone, with widgets and statistics that stay on your phone. It's made by KGWorks.</p>
+<h2>Contact</h2>
+<p>Questions, problems or ideas: write to <a href="mailto:askkgworks@gmail.com">askkgworks@gmail.com</a>. Say which phone you have and what you expected to see.</p>
+<h2>iPhone: counting while the app is closed</h2>
+<p>iOS doesn't let apps watch the hinge in the background, so Foldwise counts through two automations in the Shortcuts app. The app's guide walks you through them; here are the same steps.</p>
+<ol><li>Open <strong>Shortcuts</strong> and tap <strong>+</strong> at the bottom right.</li><li>Tap <strong>Edit</strong> at the top right.</li><li>In the search field, type <strong>Automation</strong>. Under <strong>Display</strong>, tap <strong>Opened or Closed</strong>.</li><li>At the top, tap <strong>Opened or Closed</strong> and choose <strong>Opened</strong>.</li><li>Search for <strong>Log Unfold</strong> and tap it to add it.</li><li>Leave Shortcuts. The automation saves and turns on by itself.</li></ol>
+<p>Then make a second one the same way, choosing <strong>Closed</strong> and adding <strong>Log Fold</strong>.</p>
+<p>Don't leave either automation on <strong>Opened or Closed</strong>: then both run every time, and Foldwise can't tell an unfold from a fold, so it counts neither. Settings → Shortcuts automations shows whether both are working.</p>
+<h2>Android: counting stopped</h2>
+<p>Android can close apps in the background to save battery, and unfolds then go uncounted. Foldwise warns you on the Today screen when that happens.</p>
+<ul><li>Allow background use: Settings → Apps → Foldwise → Battery, then choose <strong>Unrestricted</strong> (or <strong>Don't optimise</strong>).</li><li>Some phone makers add their own limits. Foldwise's setup shows the steps for your phone, for example turning on <strong>Autostart</strong> on Xiaomi.</li><li>Check that <strong>Count unfolds</strong> is on in Foldwise's Settings: when it's off, counting is paused.</li></ul>
+<h2>Your data</h2>
+<ul><li><strong>Export:</strong> Settings → Export CSV saves your whole history as a spreadsheet file.</li><li><strong>Delete:</strong> Settings → Reset all data deletes your history. Uninstalling Foldwise deletes everything it stored.</li><li>Foldwise has no account and sends nothing anywhere: see the <a href="https://gjeka.github.io/foldwise-privacy/">privacy policy</a>.</li></ul>
+<footer><a href="./">Privacy policy</a> · <a href="support.html">Support</a></footer>
+</main>
+</body>
+</html>
